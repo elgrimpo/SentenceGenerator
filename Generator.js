@@ -20,11 +20,12 @@ let ranSentence = {
     abilityNoun: ['brain','eyes','spirit','political orientation','gender','testicles','generosity'],
     consequenceVerb: ['save','salvage','win over','repair','dominate','harvest'],
     consequenceNoun: ['uterus','daily mood','head','will to live','appetite to kill','heart'],
-    doToday: ['put your head in the sand','get off your ass','start eating garlic','get wasted'],
+    starter: ['The odds are against you','God works in mysterious ways','You will likely fail','The road is long an windy'],
+    doToday: ['put your head in the sand','get off your ass','start eating garlic','get wasted','go and procreate'],
     generate () {
         const person = ranPicker(this.closePerson)
         console.log(`In ${ranYear()} your ${person}'s life will depend on your ability to ${ranPicker(this.abilityVerb)} your ${ranPicker(this.abilityNoun)} in order to ${ranPicker(this.consequenceVerb)} your ${person}'s ${ranPicker(this.consequenceNoun)}.`)
-        console.log(`God works in mysterious ways but the only way be ready is for you to ${ranPicker(this.doToday)} RIGHT NOW!!`)
+        console.log(`${ranPicker(this.starter)} but the only way to be ready is for you to ${ranPicker(this.doToday)} RIGHT NOW!!`)
     }
 }
 
